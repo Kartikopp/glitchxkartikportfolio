@@ -661,6 +661,24 @@ a:hover {
     position: relative;
 }
 
+.avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: zoomIn 1s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .avatar-circle {
     width: 380px;
     height: 380px;
@@ -711,11 +729,6 @@ a:hover {
 }
 
 .avatar-circle::after {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    animation: zoomIn 1s ease-out;
      content: '';
     position: absolute;
     inset: -60px;
