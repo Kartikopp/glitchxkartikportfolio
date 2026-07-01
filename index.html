@@ -716,6 +716,14 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
     animation: zoomIn 1s ease-out;
+     content: '';
+    position: absolute;
+    inset: -60px;
+    border-radius: 50%;
+    border: 3px dashed var(--neon-pink);
+    animation: rotateGlow 6s linear infinite reverse;
+    box-shadow: 0 0 20px var(--neon-pink);
+}
 }
 
 @keyframes floatAdvanced {
